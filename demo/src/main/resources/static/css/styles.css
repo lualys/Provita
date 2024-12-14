@@ -1,0 +1,102 @@
+/* Fundo estilo Minecraft */
+.minecraft-bg {
+    background: url('/images/minecraft-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Feedback */
+.text-success {
+    font-size: 1.5rem;
+    animation: bounce 1s;
+}
+
+.text-danger {
+    font-size: 1.5rem;
+    animation: shake 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+/* styles.css */
+.dynamic-background {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+/* styles.css */
+.dynamic-background {
+    height: 100vh;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe); /* Gradiente azul */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neve caindo */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1.2em;
+    opacity: 0.9;
+    animation: fall 10s linear infinite, sway 2s ease-in-out infinite;
+}
+
+/* Animações */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+/* Aurora Boreal */
+.aurora {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent),
+                linear-gradient(to bottom, rgba(0, 255, 255, 0.1), transparent);
+    mix-blend-mode: screen;
+    animation: auroraMove 10s linear infinite alternate;
+}
+
+@keyframes auroraMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
